@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.is-pc {
+  @include mq(md) {
+    display: none;
+  }
+}

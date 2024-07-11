@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.section-title {
+  font-size: rem(32);
+  font-family: $english-font-family;
+  font-weight: $regular;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.sub-section-title {
+  font-size: rem(12);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  text-align: center;
+}
