@@ -1,1 +1,17 @@
 @use "global" as *;
+
+.about__head-title {
+
+}
+
+.about-title {
+
+}
+
+.about-title::first-letter {
+  color: $green;
+}
+
+.about-sub-title {
+  color: $green;
+}
