@@ -1,0 +1,17 @@
+@use "global" as *;
+
+@for $i from 1 through 20 {
+  .u-mt#{$i * 10} {
+    margin-top: $i*10px !important;
+    margin-top: rem($i*10) !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  @for $i from 1 through 20 {
+    .u-mtSp#{$i * 10} {
+      margin-top: $i*10px !important;
+      margin-top: rem($i*10) !important;
+    }
+  }
+}
