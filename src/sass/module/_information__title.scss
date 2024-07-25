@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.information__head-title {
+
+}
+
+.information-title {
+ 
+}
+
+.information-title::first-letter {
+  color: $green;
+}
+
+.information-sub-title {
+  color: $green;
+}
