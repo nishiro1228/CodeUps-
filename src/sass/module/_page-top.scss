@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.page-top {
+  max-width: rem(48);
+
+  @include mq(md) {
+    max-width: rem(86.4);
+  }
+}
+
+.page-top img {
+  aspect-ratio: 48/48;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 80/80;
+  }
+}

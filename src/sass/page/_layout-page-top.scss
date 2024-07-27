@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.layout-page-top {
+  position: fixed;
+  right: rem(15);
+  bottom: rem(15);
+
+  @include mq(md) {
+    right: rem(34.2);
+    bottom: rem(15);
+  }
+}

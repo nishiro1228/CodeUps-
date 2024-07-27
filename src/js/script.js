@@ -7,6 +7,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-drawer").fadeToggle();
   });
 
+  // ページトップへ戻る
+   $('.js-page-top').on("click",function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+   });
+
   // ドロワーナビのaタグをクリックで閉じる
   $(".js-drawer a[href]").on("click", function () {
       $(".js-hamburger").removeClass(".is-active");
