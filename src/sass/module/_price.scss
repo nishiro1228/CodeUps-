@@ -2,9 +2,11 @@
 
 .price {
   padding-top: rem(80);
+  padding-bottom: rem(80);
 
   @include mq(md) {
     padding-top: rem(87.2);
+    padding-bottom: rem(100);
   }
 }
 
@@ -25,8 +27,8 @@
   @include mq(md) {
     max-width: rem(437);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: rem(-39);
+    left: rem(-55);
   }
 }
 

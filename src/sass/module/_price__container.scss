@@ -55,10 +55,10 @@
 }
 
 .price__item-fee {
-  font-size: rem(14);
+  font-size: rem(12.4);
   font-family: $base-font-family;
   font-weight: $regular;
-  line-height: calc(24/14);
+  line-height: calc(24/12.4);
 
   @include mq(md) {
     font-size: rem(14.4);
