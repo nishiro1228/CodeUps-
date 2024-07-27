@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.blog__head-title {
+
+}
+
+.blog-title {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.blog-title::first-letter {
+  color: $green;
+
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.blog-sub-title {
+  color: $white;
+}

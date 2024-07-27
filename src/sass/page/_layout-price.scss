@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.layout-price {
+  background-color: $gray;
+  margin-top: rem(80);
+
+  @include mq(md) {
+    margin-top: rem(140);
+  }
+}

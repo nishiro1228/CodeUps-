@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.price {
+  padding-top: rem(80);
+
+  @include mq(md) {
+    padding-top: rem(87.2);
+  }
+}
+
+.price__inner {
+  position: relative;
+}
+
+.price-button {
+  margin-top: rem(40);
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.price__img {
+  @include mq(md) {
+    max-width: rem(437);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.price__img img {
+  @include mq(md) {
+    aspect-ratio: 437/201;
+    object-fit: cover;
+    height: auto;
+  }
+}

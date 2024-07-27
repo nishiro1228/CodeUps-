@@ -1,0 +1,86 @@
+@use "global" as *;
+
+.price__container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    flex-direction: initial;
+    margin-top: rem(40);
+  }
+}
+
+.price__list {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: 0;
+    flex-grow: 1;
+  }
+}
+
+.price__list-item {
+}
+
+.price__list-item + .price__list-item {
+  margin-top: rem(38.4);
+}
+
+.price__item-title {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: calc(24/16);
+  border-bottom: 1px solid $green;
+  padding-bottom: rem(4);
+}
+
+.price__item-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(8);
+}
+
+.price__item-text {
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc(24/14);
+
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(24/16);
+  }
+}
+
+.price__item-fee {
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc(24/14);
+
+  @include mq(md) {
+    font-size: rem(14.4);
+    line-height: calc(24/14.4);
+  }
+}
+
+.price__container-img {
+  max-width: rem(345);
+
+  @include mq(md) {
+    max-width: rem(492);
+    margin-left: rem(93);
+  }
+}
+
+.price__container-img img {
+  aspect-ratio: 345/227;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 492/746;
+  }
+}

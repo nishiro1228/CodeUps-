@@ -39,11 +39,7 @@
 }
 
 .card__wrap {
-  padding: rem(16) rem(16) rem(24) rem(16);
-
-  @include mq(md) {
-    padding: rem(24) rem(16) rem(40) rem(16);
-  }
+  margin-top: rem(10);
 }
 
 .card__category {
@@ -57,6 +53,14 @@
   color: $green;
 }
 
+.card__dete {
+  font-size: rem(12);
+  font-family: $english-font-family;
+  font-weight: $regular;
+  line-height: calc(18/12);
+  color: $black;
+}
+
 .card__title {
   margin-top: rem(4);
   border-bottom: 1px solid $green;
@@ -65,8 +69,8 @@
 
 .card__text {
   text-align: center;
-  font-size: rem(14);
-  line-height: calc( 24/ 14);
+  font-size: rem(16);
+  line-height: calc( 24/ 16);
   margin-top: rem(8);
 
   @include mq(md) {
@@ -74,6 +78,10 @@
     line-height: calc( 24/ 16);
     margin-top: rem(16);
   }
+}
+
+.card__text--left {
+  text-align: left;
 }
 
 .card__body {
@@ -110,3 +118,6 @@
   }
 }
 
+.cards__item--white {
+  background-color: $white;
+}
