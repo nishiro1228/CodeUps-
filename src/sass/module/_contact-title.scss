@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.contact__head-title {
+
+}
+
+.contact-title {
+  font-size: rem(80);
+  font-family: $english-font-family;
+  font-weight: $regular;
+  line-height: 1;
+}
+
+.contact-title::first-letter {
+  color: $green;
+}
+
+.contact-sub-title {
+  color: $green;
+}

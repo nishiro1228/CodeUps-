@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.contact__container {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+
+  @include mq(md) {
+    flex-direction: initial;
+    padding: rem(76.8) rem(50);
+  }
+}
+
+.contact__left {
+  text-align: center;
+  @include mq(md) {
+    border-right: 1px solid $green;
+    padding-right: rem(86.8);
+  }
+}
+
+.contact__logo {
+  display: inline-block;
+  max-width: rem(174);
+  width:  100%;
+  margin-bottom: rem(4.8);
+
+  @include mq(md) {
+    max-width: rem(200);
+  }
+}
+
+.contact__logo img {
+  aspect-ratio: 174/65;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 200/75;
+  }
+}
+
+.contact__left-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(16);
+  border-top: 1px solid $green;
+
+  @include mq(md) {
+    flex-direction: initial;
+    padding-top: rem(24);
+  }
+}
+
+.contact__information {
+
+}
+
+.contact__information-text {
+  text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+  }
+}
+.contact__information-text + .contact__information-text {
+  margin-top: rem(4);
+}
+
+.contact__left-img {
+  max-width: rem(295);
+
+  @include mq(md) {
+    max-width: rem(273);
+  }
+}
+
+.contact__left-img img {
+  aspect-ratio: 295/160;
+  object-fit: cover;
+  height: auto;
+  margin-top: rem(16);
+
+  @include mq(md) {
+    aspect-ratio: 273/148;
+    margin-top: 0;
+    margin-left: rem(5);
+  }
+}
+
+.contact__right {
+  max-width: rem(315);
+  text-align: center;
+  flex-grow: 1;
+  @include mq(md) {
+    margin-left: rem(81);
+    padding-top: rem(25);
+  }
+}
+
+.contact__right-text {
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc(18/14);
+  color: $green;
+  margin-top: rem(1.6);
+}
+
+.contact-button {
+
+}
