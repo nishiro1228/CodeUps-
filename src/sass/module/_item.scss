@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.item {
+
+}
+
+.item__title {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: calc(18/16);
+  color: $white;
+  margin-top: rem(40);
+  position: relative;
+}
+
+.item__title::before {
+  content: "";
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/a7bf89b22a456336e8bf7e839bc3dac26a3efdbb/src/images/common/text-icon.svg);
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  left: rem(-25);
+  top: 0;
+}
+
+a:first-of-type .item__title {
+  margin-top: 0;
+}
+
+.item__sub-title {
+  margin-top: rem(24);
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc(18/16);
+  color: $white;
+}
+

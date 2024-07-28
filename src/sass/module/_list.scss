@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.list {
+  display: grid;
+  gap: rem(16);
+  grid-template-columns: repeat(2, 1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
