@@ -43,7 +43,7 @@
 
 .footer__sns {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: rem(16);
 
   @include mq(md) {
@@ -98,10 +98,12 @@
   color: $white;
   text-align: center;
   margin-top: rem(40);
+  letter-spacing: -0.05em;
 
   @include mq(md) {
     font-size: rem(14);
     line-height: calc(18/14);
     margin-top: rem(80);
+    letter-spacing: 0;
   }
 }
