@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.swiper {
+  // overflow: initial !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: rem(80) !important;
+  width: rem(80) !important;
+}
+/* 矢印を消して画像に変更する */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  // content: "";
+}
+/* 前に戻る矢印の画像パス */
+.swiper-button-prev {
+  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/f944ced5f3332aaaef6b842b356283abd150d2f4/src/images/common/prev.svg);
+}
+/* 次に進む矢印の画像パス */
+.swiper-button-next {
+  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/f944ced5f3332aaaef6b842b356283abd150d2f4/src/images/common/next.svg);
+}
+
+.swiper-button-next {
+  margin-left: rem(80);
+}

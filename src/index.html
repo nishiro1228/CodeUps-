@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -210,17 +211,17 @@
     <!-- Campaign -->
     <section class="campaign layout-campaign">
       <div class="campaign__inner">
-        <div class="campaign__body">
+        <div class="campaign__head">
           <h2 class="campaign-title section-title">Campaign</h2>
           <span class="campaign-sub-title sub-section-title">キャンペーン</span>
         </div>
         <div class="campaign__swiper campaign-swiper">
           <div class="swiper-pagination"></div>
           <div class="campaign-swiper__button-wrap">
-            <div class="swiper-button-prev js-campaign-arrow"><img src="" alt="" width="" height="" loading="lazy" decoding="async"></div>
+            <div class="swiper-button-prev js-campaign-arrow"></div>
             <div class="swiper-button-next js-campaign-arrow"></div>
           </div>
-          <div class="swiper js-campaign-swiper">
+          <div class="campaign__container swiper js-campaign-swiper">
             <div class="swiper-wrapper campaign__cards cards">
               <article class="cards__item card swiper-slide">
                 <a href="#">
@@ -244,7 +245,7 @@
                 <a href="#">
                   <div class="card__img">
                     <img
-                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign3.jpg?raw=true"
+                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign2.jpg?raw=true"
                       alt="省略">
                   </div>
                   <div class="card__wrap">
@@ -262,7 +263,7 @@
                 <a href="#">
                   <div class="card__img">
                     <img
-                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign4.jpg?raw=true"
+                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign3.jpg?raw=true"
                       alt="省略">
                   </div>
                   <div class="card__wrap">
@@ -280,7 +281,7 @@
                 <a href="#">
                   <div class="card__img">
                     <img
-                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign2.jpg?raw=true"
+                      src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/campaign4.jpg?raw=true"
                       alt="省略">
                   </div>
                   <div class="card__wrap">
@@ -351,7 +352,7 @@
           <span class="information-sub-title sub-section-title">ダイビング情報</span>
         </div>
         <div class="information__container">
-          <div class="information__img">
+          <div class="information__img colorbox">
             <img src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/Information1.jpg?raw=true"
               alt="黄色や青色の魚が泳いでいる様子" width="" height="" loading="lazy" decoding="async">
           </div>
@@ -368,6 +369,10 @@
         </div>
       </div>
     </section>
+
+    <div class="colorbox">
+      <img src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/Information1.jpg?raw=true">
+      </div>
 
     <!-- blog -->
     <section class="blog">
@@ -388,7 +393,7 @@
                 <img src="https://github.com/nishiro1228/CodeUps-/blob/main/src/images/common/Blog1.jpg?raw=true"
                   alt="サンゴ礁">
               </div>
-              <div class="card__wrap">
+              <div class="card__wrap blog-card__wrap">
                 <time class="card__dete" datetime="2023-11-17">2023.11/17</time>
                 <p class="card__title">ライセンス取得</p>
                 <p class="card__text card__text--left">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>

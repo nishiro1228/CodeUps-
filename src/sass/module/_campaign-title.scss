@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.campaign__head {
+
+}
+
+.campaign-title {
+
+}
+
+.campaign-title::first-letter {
+  color: $green;
+}
+
+.campaign-sub-title {
+  color: $green;
+}

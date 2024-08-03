@@ -48,6 +48,34 @@
   align-items: center;
 }
 
+.header__nav-list li a {
+  position: relative;
+}
+
+.header__nav-list li.current a,
+.header__nav-list li a:hover {
+  color: $green;
+}
+
+.header__nav-list li a::after {
+    content: '';
+    position: absolute;
+    bottom: rem(15);
+    left: 10%;
+    width: 80%;
+    height: rem(2);
+    background: $green;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+
+.header__nav-list li.current a::after,
+.header__nav-list li a:hover::after {
+  transform: scale(1, 1);
+}
+
+
 .header__nav-item {
   height: inherit;
 }

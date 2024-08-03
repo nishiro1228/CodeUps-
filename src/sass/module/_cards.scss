@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.cards__item {
+  @include mq(md) {
+    width: rem(333) !important;
+  }
+}
+
+
+.cards__item a {
+  @include mq(md) {
+    width: rem(333);
+  }
+}

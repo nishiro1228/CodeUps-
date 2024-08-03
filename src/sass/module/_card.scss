@@ -39,7 +39,12 @@
 }
 
 .card__wrap {
-  margin-top: rem(10);
+  margin-top: rem(-1.2);
+  padding: rem(16) rem(16) rem(24) rem(16);
+
+  @include mq(md) {
+    padding: rem(24) rem(16) rem(40) rem(16);
+  }
 }
 
 .card__category {
@@ -77,6 +82,7 @@
     font-size: rem(16);
     line-height: calc( 24/ 16);
     margin-top: rem(16);
+    margin-left: rem(-16);
   }
 }
 
@@ -86,7 +92,7 @@
 
 .card__body {
   display: flex;
-  margin-top: rem(12.8);
+  margin-top: rem(8);
 }
 
 .card__price1 {
@@ -99,7 +105,7 @@
   align-items: flex-end;
 
   @include mq(md) {
-    font-size: rem(20.8);
+    font-size: rem(24);
     padding-left: rem(17);
   }
 }
@@ -113,8 +119,8 @@
   margin-left: rem(16);
 
   @include mq(md) {
-    font-size: rem(32);
-    margin-left: rem(19.2);
+    font-size: rem(36.8);
+    margin-left: rem(32);
   }
 }
 
