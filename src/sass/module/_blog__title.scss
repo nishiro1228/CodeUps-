@@ -1,7 +1,6 @@
 @use "global" as *;
 
-.blog__head-title {
-}
+.blog__head-title {}
 
 .blog-title {
   @include mq(md) {

@@ -21,14 +21,11 @@
   width:  100%;
 }
 
-.mv__slider {
-}
+.mv__slider {}
 
-.mv-swiper-wrapper {
-}
+.mv-swiper-wrapper {}
 
-.mv-swiper-slide {
-}
+.mv-swiper-slide {}
 
 .mv-swiper-slide__img {
   height: inherit;
@@ -80,7 +77,6 @@
 
   @include mq(md) {
     letter-spacing: 0;
-  //   top: 55.8%;
   }
 }
 

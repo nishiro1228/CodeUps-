@@ -1,12 +1,8 @@
 @use "global" as *;
 
-.information__head-title {
+.information__head-title {}
 
-}
-
-.information-title {
- 
-}
+.information-title {}
 
 .information-title::first-letter {
   color: $green;

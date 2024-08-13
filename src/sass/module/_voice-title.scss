@@ -1,12 +1,8 @@
 @use "global" as *;
 
-.voice__head-title {
+.voice__head-title {}
 
-}
-
-.voice-title {
-
-}
+.voice-title {}
 
 .voice-title::first-letter {
   color: $green;

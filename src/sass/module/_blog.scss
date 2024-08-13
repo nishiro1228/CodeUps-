@@ -30,8 +30,7 @@
   position: relative;
 }
 
-.blog__bg {
-}
+.blog__bg {}
 
 .blog__img {
   @include mq(md) {
@@ -84,8 +83,7 @@
   }
 }
 
-.blog__card-img {
-}
+.blog__card-img {}
 
 .blog__card-img img {
   aspect-ratio: 301/201;

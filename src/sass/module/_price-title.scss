@@ -1,12 +1,8 @@
 @use "global" as *;
 
-.price__head-title {
+.price__head-title {}
 
-}
-
-.price-title {
-
-}
+.price-title {}
 
 .price-title::first-letter {
   color: $green;
