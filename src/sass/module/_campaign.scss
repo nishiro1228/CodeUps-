@@ -22,23 +22,34 @@
 }
 
 .campaign__container {
-  margin-left: rem(-25) !important;
-}
-
-.campaign__cards {
-  margin-top: rem(24);
+  padding-bottom: rem(15) !important;
+  margin-left: rem(-4) !important;
+  margin-top: rem(25);
 
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(37.8);
+    margin-left: rem(-24.8) !important;
   }
 }
 
+.campaign__cards {
+}
+
 .campaign__item {
-  max-width: rem(333);
+  width: rem(280) !important;
+
+  @include mq(md) {
+    width: rem(333) !important;
+  }
 }
 
 .campaign-button {
   text-align: center;
-  margin-top: rem(80);
+  margin-top: rem(25.6);
+  padding-bottom: rem(35);
+
+  @include mq(md) {
+    margin-top: rem(64);
+  }
 }
 

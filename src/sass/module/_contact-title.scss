@@ -9,6 +9,11 @@
   font-family: $english-font-family;
   font-weight: $regular;
   line-height: 1;
+  margin-left: rem(-7.2);
+
+  @include mq(md) {
+    margin-left: 0;
+  }
 }
 
 .contact-title::first-letter {

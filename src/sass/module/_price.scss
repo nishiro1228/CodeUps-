@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price {
-  padding-top: rem(80);
+  padding-top: rem(75.2);
   padding-bottom: rem(80);
 
   @include mq(md) {

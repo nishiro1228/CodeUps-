@@ -2,13 +2,14 @@
 
 .cards__item {
   @include mq(md) {
+    width: rem(315.4) !important;
+  }
+  @include mq(xl) {
     width: rem(333) !important;
   }
 }
 
 
 .cards__item a {
-  @include mq(md) {
-    width: rem(333);
-  }
+ 
 }

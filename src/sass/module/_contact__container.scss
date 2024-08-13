@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .contact__container {
-  
   display: flex;
   flex-direction: column;
   padding-left: rem(24);
@@ -71,32 +70,37 @@
   margin-top: rem(4);
 }
 
-.contact__left-img {
+.contact__googlemap {
   max-width: rem(295);
-
-  @include mq(md) {
-    max-width: rem(273);
-  }
-}
-
-.contact__left-img img {
-  aspect-ratio: 295/160;
-  object-fit: cover;
-  height: auto;
+  width:  100%;
+  margin-inline: auto;
   margin-top: rem(16);
 
   @include mq(md) {
-    aspect-ratio: 273/148;
+    max-width: rem(273);
     margin-top: 0;
     margin-left: rem(5);
   }
 }
 
+.contact__googlemap iframe {
+  aspect-ratio: 295/160;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+
+  @include mq(md) {
+    aspect-ratio: 273/148;
+  }
+}
+
 .contact__right {
   max-width: rem(315);
+  width:  100%;
+  margin-inline: auto;
   text-align: center;
   flex-grow: 1;
-  margin-top: rem(40);
+  margin-top: rem(33.6);
 
   @include mq(md) {
     margin-left: rem(81);

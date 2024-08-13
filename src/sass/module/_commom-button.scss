@@ -5,14 +5,13 @@
   font-size: rem(14);
   font-family: $english-font-family;
   font-weight: $regular;
-  padding: rem(16) rem(40);
+  padding: rem(16) rem(88) rem(16) rem(40);
   border: 2px solid transparent;
   border-radius: 0;
   background: $green;
   color: $white;
   position: relative;
   z-index: 1;
-  
 }
 
 .commom-button::before {
@@ -21,9 +20,9 @@
   display: inline-block;
   border: 1px solid $green;
   top: rem(1.8);
-  left: rem(-5.6);
-  right: rem(-2.4);
-  bottom: rem(-1.4);
+  left: rem(4);
+  right: rem(-5.6);
+  bottom: rem(-6.2);
   z-index: -10;
   
 }
@@ -49,37 +48,30 @@
   transform: scale(1, 1);
 }
 
-.commom-button span {
-	// display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-	// text-align: center;
-	// text-decoration: none;
-	// font-weight: bold;
-	// background: #eee;
-	// color: $white;
-	// border-radius: 100vh;
-	// position: relative;
-	// transition: 0.5s;
+.arrow::after {
+  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/0cfcef5a8b42bb890f780e2d40d729fcf6a0ee6f/src/images/common/Vector%204button-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
 }
 
 .arrow::before {
 	content: '';
 	position: absolute;
-	top: calc(50% - 2px);
-	right: 1em;
-	transform: translateY(calc(-50% - 2px)) rotate(45deg);
-	width: 10px;
+	top: calc(50% + -2.2px);
+	right: 2.7em;
+	transform: translateY(calc(-50% - -1px)) rotate(45deg);
+	width: rem(8.6);
 	height: 1px;
 	background: $white;
 }
 .arrow::after {
 	content: '';
 	position: absolute;
-	top: 50%;
-	right: 1em;
+	top: 53%;
+	right: 2.7em;
 	transform: translateY(-50%);
-	width: 50px;
+	width: rem(37);
 	height: 1px;
 	background-color: $white;
 }

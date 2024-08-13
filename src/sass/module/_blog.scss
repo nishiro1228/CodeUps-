@@ -1,8 +1,7 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(77.8);
-  height: rem(500);
+  padding-top: rem(74.6);
   position: relative;
 
   @include mq(md) {
@@ -16,7 +15,7 @@
     content: "";
     display: block;
     width: 100%;
-    height: 100%;
+    height: rem(500);
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +31,6 @@
 }
 
 .blog__bg {
-  
 }
 
 .blog__img {
@@ -78,16 +76,15 @@
 }
 
 .blog__item {
-  padding: rem(16) rem(16) rem(28.8) rem(16);
+  padding: rem(16) rem(16) rem(22.4) rem(16);
 
 
   @include mq(md) {
-    padding: rem(16) rem(16) rem(24) rem(16);
+    padding: rem(16) rem(16) rem(19.2) rem(16);
   }
 }
 
 .blog__card-img {
-  
 }
 
 .blog__card-img img {
@@ -97,7 +94,7 @@
 }
 
 .blog-card__wrap {
-  padding: 0;
+  padding: rem(17.6) 0 0 0 !important;
 }
 
 .blog-button {
