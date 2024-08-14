@@ -5,6 +5,7 @@
   font-family: $english-font-family;
   font-weight: $regular;
   text-align: center;
+  display: block;
 
   @include mq(md) {
     font-size: rem(40);

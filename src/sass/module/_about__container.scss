@@ -63,23 +63,10 @@
   @include mq(md) {
     width: rem(194);
     position: absolute;
-    bottom: rem(242);
-    right: rem(-2);
-    z-index: 1;
-  }
-  @include mq(lg) {
-    width: rem(194);
-    position: absolute;
-    bottom: rem(98);
-    right: rem(-2);
-    z-index: 1;
-  }
-
-  @include mq(xl) {
-    width: rem(194);
-    position: absolute;
-    bottom: rem(98);
-    right: rem(-98);
+    // bottom: rem(242);
+    bottom: calc(50% - 150px);
+    // right: rem(-2);
+    right: calc(50% - 150px);
     z-index: 1;
   }
 }
