@@ -17,5 +17,9 @@
 }
 
 .blog-sub-title {
-  color: $white;
+  color: $green;
+
+  @include mq(md) {
+    color: $white;
+  }
 }

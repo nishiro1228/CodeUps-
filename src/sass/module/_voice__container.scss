@@ -4,7 +4,7 @@
   max-width: rem(301);
   position: absolute;
   top: rem(-111);
-  left: rem(-54);
+  left: calc(45.8% - min(44vw, 35.5rem));
 }
 
 .voice__img1 img {
@@ -55,6 +55,7 @@
 
 .voice__wrap {
   display: flex;
+  justify-content: space-between;
 }
 
 .voice__head {

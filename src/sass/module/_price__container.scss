@@ -5,7 +5,8 @@
   width:  100%;
 
   @include mq(md) {
-    max-width: rem(492);
+    max-width: rem(493.6);
+    width: 50%;
     margin-left: rem(93);
   }
 }
@@ -32,6 +33,7 @@
     margin-top: 0;
     flex-grow: 1;
     margin-top: rem(-1.6);
+    width: 50%;
   }
 }
 
@@ -73,6 +75,7 @@
   font-family: $base-font-family;
   font-weight: $regular;
   line-height: calc(24/12.4);
+  margin-left: rem(10);
 
   @include mq(md) {
     font-size: rem(14.4);
@@ -85,7 +88,7 @@
   width:  100%;
 
   @include mq(md) {
-    max-width: rem(492);
+    max-width: rem(493.6);
   }
 }
 

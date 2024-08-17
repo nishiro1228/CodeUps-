@@ -17,13 +17,13 @@
 }
 /* 前に戻る矢印の画像パス */
 .swiper-button-prev {
-  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/f944ced5f3332aaaef6b842b356283abd150d2f4/src/images/common/prev.svg);
+  background-image: url(/assets/images/common/prev.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 /* 次に進む矢印の画像パス */
 .swiper-button-next {
-  background-image: url(https://raw.githubusercontent.com/nishiro1228/CodeUps-/f944ced5f3332aaaef6b842b356283abd150d2f4/src/images/common/next.svg);
+  background-image: url(/assets/images/common/next.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -33,3 +33,7 @@
 .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {}
 
 .swiper-wrapper  {}
+
+.swiper-backface-hidden .swiper-slide {
+  height: auto;
+}

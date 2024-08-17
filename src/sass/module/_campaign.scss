@@ -34,13 +34,7 @@
 
 .campaign__cards {}
 
-.campaign__item {
-  width: rem(280) !important;
-
-  @include mq(md) {
-    width: rem(333) !important;
-  }
-}
+.campaign__item {}
 
 .campaign-button {
   text-align: center;

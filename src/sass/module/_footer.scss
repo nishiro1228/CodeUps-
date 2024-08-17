@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $green;
-  padding-top: rem(48);
+  padding-top: rem(56);
   padding-bottom: rem(56);
 
   @include mq(md) {
@@ -99,6 +99,8 @@
   text-align: center;
   margin-top: rem(40);
   letter-spacing: -0.05em;
+  transition: 0.3s;
+  cursor: pointer;
 
   @include mq(md) {
     font-size: rem(14);
@@ -106,4 +108,8 @@
     margin-top: rem(80);
     letter-spacing: 0;
   }
+}
+
+.footer__copyright:hover {
+  opacity: .7;
 }

@@ -12,6 +12,7 @@
   padding-top: rem(22.8);
   padding-left: rem(12);
   padding-bottom: rem(50);
+  overflow: scroll;
 }
 
 .drawer-menu__inner {
@@ -26,8 +27,5 @@
 
 .drawer-menu__body {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: rem(-61);
+  margin-top: rem(46.6);
 }
