@@ -37,7 +37,7 @@
     max-width: rem(437);
     position: absolute;
     top: rem(-63);
-    left: rem(100);
+    left: calc(45.8% - min(44vw, 35.5rem));
   }
 }
 
@@ -50,22 +50,13 @@
 }
 
 .blog__cards {
-  max-width: rem(600);
   width:  100%;
-  margin-inline: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   display: grid;
   margin-top: rem(27.2);
   gap: rem(40);
   grid-template-columns: repeat(1, 1fr);
 
   @include mq(md) {
-    max-width: rem(1130);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
     margin-top: rem(80);
     grid-template-columns: repeat(3, 1fr);
   }
@@ -86,6 +77,10 @@
   aspect-ratio: 301/201;
   object-fit: cover;
   height: auto;
+}
+
+.blog__title {
+  border-bottom: 1px solid $green;
 }
 
 .blog-card__wrap {

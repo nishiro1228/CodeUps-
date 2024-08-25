@@ -1,39 +1,97 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
     // ハンバーガーメニュー
+$(function () {
     $(".js-hamburger").click(function () {
         $(this).toggleClass("is-active");
         $(".js-drawer").fadeToggle();
+
+        // ハンバーガーメニューが開いたらヘッダーの背景色を赤に変更
+        if ($(this).hasClass("is-active")) {
+            $("header").addClass("header-green");
+        } else {
+            $("header").removeClass("header-green");
+        }
+
+        // ドロワーが開いたときにスクロールをチェック
+        checkDrawerHeight();
     });
-  
-    // ページトップへ戻る
-    $('.js-page-top').on("click", function () {
-      $('body,html').animate({
-          scrollTop: 0
-      }, 500);
-      return false;
-    });
-  
+
     // ドロワーナビのaタグをクリックで閉じる
     $(".js-drawer a[href]").on("click", function () {
         $(".js-hamburger").removeClass("is-active");
         $(".js-drawer").fadeOut();
+
+        // ヘッダーの背景色を元に戻す
+        $("header").removeClass("header-green");
     });
-  
+
     // resizeイベント
     $(window).on('resize', function() {
         if (window.matchMedia("(min-width: 768px)").matches) {
             $(".js-hamburger").removeClass("is-active");
             $(".js-drawer").fadeOut();
+
+            // ヘッダーの背景色を元に戻す
+            $("header").removeClass("header-green");
         }
+
+        // リサイズ時に高さを再チェック
+        checkDrawerHeight();
+    });
+
+    // ドロワーメニューのスクロールを無効化
+function checkDrawerHeight() {
+    if ($(".js-drawer").is(":visible")) {
+        $(".js-drawer").css({
+            "max-height": "100vh",
+            "overflow-y": "hidden"  // スクロール無効化
+        });
+    }
+}
+
+    // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+    $(".js-hamburger").click(function () {
+  
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+  
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+  
+      } else {
+  
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+  
+      }
+    });
+});
+    
+    // ページトップへ戻る
+    var pageTopBtn = $('.js-page-top');
+
+    // スクロールイベントの監視
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 200) { // 200px以上スクロールしたら表示
+        pageTopBtn.addClass('visible');
+      } else {
+        pageTopBtn.removeClass('visible');
+      }
     });
   
+    // ページトップへ戻る処理
+    pageTopBtn.on('click', function () {
+      $('body,html').animate({ scrollTop: 0 }, 500); // 500ミリ秒でスクロールトップ
+      return false;
+    });
+
     const swiper = new Swiper(".js-swiper1", {
-      slidesPerView: 'auto', // または適切な数値を指定
-      spaceBetween: 20, // または適切な間隔を指定
-      loop: true,
-      effect: "fade",
-      speed: 3000,
-      allowTouchMove: false,
+        slidesPerView: 'auto', // または適切な数値を指定
+        spaceBetween: 20, // または適切な間隔を指定
+        loop: true,
+        effect: "fade",
+        speed: 3000,
+        allowTouchMove: false,
       autoplay: {
         delay: 3000,
       },
@@ -56,7 +114,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // Swiper
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
         loop: true,
-        speed: 2000,
+        speed: 1200, // スライドの移動速度を1.2秒に設定
         slidesPerView: 1.5,
         spaceBetween: 20,
         breakpoints: {
@@ -70,13 +128,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             }
         },
         autoplay: {
-            delay: 3000,
-          },
+            delay: 2500, // 自動再生の遅延時間を2.5秒に設定
+            disableOnInteraction: false, // ユーザーの操作後も自動再生を継続
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
     });
+    
   
     //要素の取得とスピードの設定
 var box = $('.colorbox'),
@@ -103,6 +163,7 @@ color.on('inview', function(){
       }
  });
 });
+
   
   });
   

@@ -4,6 +4,12 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+.card__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .card a {
   height: 100%;
   display: block;
@@ -39,12 +45,20 @@
 }
 
 .card__wrap {
+  display: flex;
+  flex-direction:column;
+  flex-grow: 1;
   margin-top: rem(-1.2);
   padding: rem(18) rem(16) rem(24) rem(16);
 
   @include mq(md) {
     padding: rem(25.6) rem(16) rem(40) rem(16);
   }
+}
+
+.card__meta {
+  flex-grow: 1;
+  border-bottom: 1px solid $green;
 }
 
 .card__category {
@@ -72,7 +86,6 @@
 
 .card__title {
   margin-top: rem(5.6);
-  border-bottom: 1px solid $green;
   padding-bottom: rem(6.4);
 
   @include mq(md) {
@@ -99,7 +112,9 @@
 
 .card__body {
   display: flex;
+  justify-content: center;
   margin-top: rem(8);
+  align-items: flex-end;
 }
 
 .card__price1 {
@@ -110,7 +125,6 @@
   line-height: 1;
   display: flex;
   align-items: flex-end;
-  padding-left: rem(17);
 
   @include mq(md) {
     font-size: rem(24);

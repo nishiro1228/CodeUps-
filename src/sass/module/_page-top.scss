@@ -3,10 +3,19 @@
 .page-top {
   max-width: rem(48);
   z-index: 10;
+  position: fixed;
+  opacity: 0; /* フェードイン/アウト用 */
+  visibility: hidden; /* 初期状態で非表示 */
+  transition: opacity 0.4s ease; /* フェードイン・アウトのアニメーション */
 
   @include mq(md) {
     max-width: rem(86.4);
   }
+}
+
+.page-top.visible {
+  visibility: visible; /* 要素を表示 */
+  opacity: 1; /* フェードイン */
 }
 
 .page-top img {

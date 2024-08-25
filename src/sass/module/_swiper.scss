@@ -37,3 +37,7 @@
 .swiper-backface-hidden .swiper-slide {
   height: auto;
 }
+
+.swiper-fade .swiper-slide-active  {
+  height: inherit;
+}

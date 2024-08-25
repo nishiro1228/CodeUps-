@@ -3,13 +3,9 @@
 .about__container {
   margin-top: rem(27.2);
   position: relative;
-  max-width: rem(600);
-  width:  100%;
-  margin-inline: auto;
 
   @include mq(md) {
     margin-top: rem(40);
-    max-width: rem(1130);
   }
 }
 
@@ -69,8 +65,8 @@
   @include mq(md) {
     width: rem(194);
     position: absolute;
-    bottom: calc(86.4% - min(84vh, 40rem));
-    right: calc(50% - min(50vw, 40rem));
+    bottom: calc(82% - min(84vh, 40rem));
+    right: calc(50% - min(48vw, 40rem));
     z-index: 1;
   }
 }
@@ -84,16 +80,16 @@
 .about__wrap {
   display: flex;
   flex-direction: column;
-  position: relative;
   z-index: 3;
   margin-top: rem(58);
 
   @include mq(md) {
     flex-direction: initial;
-    top: rem(-403.8);
-    right: rem(41.4);
+    align-items: flex-start;
     margin-top: 0;
-    margin-left: rem(239.2);
+    position: absolute;
+    right: 2.5625rem;
+    top: 12.5rem;
   }
 }
 
