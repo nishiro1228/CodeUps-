@@ -28,7 +28,8 @@
 .mv-swiper-slide {}
 
 .mv-swiper-slide__img {
-  height: inherit;
+  display: block;
+  height: 100%;
   min-height: inherit;
 }
 
@@ -50,7 +51,7 @@
 
   @include mq(md) {
     top: 50%;
-    transform: translate(-45%,-50%);
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -64,11 +65,12 @@
   @include mq(md) {
     font-size: rem(73.6);
     letter-spacing: 0.64em;
+    text-indent: rem(42);
   }
 }
 
 .mv__text {
-  width: 93%;
+  width: 100%;
   text-align: center;
   font-size: rem(20);
   font-family: $english-font-family;

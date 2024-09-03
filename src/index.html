@@ -28,10 +28,10 @@
 
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js?ver=1.0.0"></script>
 </head>
 
@@ -44,30 +44,30 @@
             decoding="async"></a>
       </h1>
       <nav class="header__nav is-sp">
-        <ul class="header__nav-list">
+        <ul class="header__nav-items">
           <li class="header__nav-item">
-            <a href="" class="header__link">Campaign<span>キャンペーン</span></a>
+            <a href="">Campaign<span>キャンペーン</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">About us<span>私たちについて</span></a>
+            <a href="">About us<span>私たちについて</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">Information<span>ダイビング情報</span></a>
+            <a href="">Information<span>ダイビング情報</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">Blog<span>ブログ</span></a>
+            <a href="">Blog<span>ブログ</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">Voice<span>お客様の声</span></a>
+            <a href="">Voice<span>お客様の声</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">Price<span>料金一覧</span></a>
+            <a href="">Price<span>料金一覧</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">FAQ<span>よくある質問</span></a>
+            <a href="">FAQ<span>よくある質問</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__link">Contact<span>お問合せ</span></a>
+            <a href="">Contact<span>お問合せ</span></a>
           </li>
         </ul>
       </nav>
@@ -81,7 +81,7 @@
   </header>
 
   <!-- ドロワー -->
-  <div class="drawer-menu js-drawer no-scroll">
+  <div class="header__drawer-menu drawer-menu js-drawer no-scroll">
     <div class="drawer-menu__inner">
       <div class="drawer-menu__body">
         <ul class="drawer-menu__list list">
@@ -196,7 +196,7 @@
 
     <!-- Campaign -->
     <section class="campaign layout-campaign">
-      <div class="campaign__inner">
+      <div class="campaign__inner inner">
         <div class="campaign__head">
           <span class="campaign-title section-title">Campaign</span>
           <h2 class="campaign-sub-title sub-section-title">キャンペーン</h2>
@@ -331,7 +331,6 @@
             </div>
           </div>
           <div class="about__img3 is-sp">
-            <img src="./assets/images/common/about3.png" alt="" width="" height="" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -369,7 +368,6 @@
           <h2 class="blog-sub-title sub-section-title">ブログ</h2>
         </div>
         <div class="blog__img is-sp">
-          <img src="./assets/images/common/_キンギョハナダイ.png" alt="" width="" height="" loading="lazy" decoding="async">
         </div>
         <div class="blog__cards cards">
           <a href="#">
@@ -426,7 +424,6 @@
           <h2 class="voice-sub-title sub-section-title">お客様の声</h2>
         </div>
         <div class="voice__img1 is-sp">
-          <img src="./assets/images/common/voice3.1.jpg" alt="" width="" height="" loading="lazy" decoding="async">
         </div>
         <div class="voice__container">
           <div class="voice__box">
@@ -470,7 +467,6 @@
           <a href="" class="commom-button">View more <span class="arrow"></span></a>
         </div>
         <div class="voice__img2 is-sp">
-          <img src="./assets/images/common/Voice4.jpg" alt="" width="" height="" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -551,7 +547,7 @@
           </ul>
           <div class="price__colorbox colorbox">
             <picture class="price__container-img">
-              <source srcset="./assets/images/common/Price1.jpg" media="(min-width: 769px)" />
+              <source srcset="./assets/images/common/Price1.jpg" media="(min-width: 767px)" />
               <img src="./assets/images/common/Price-sp.jpg" alt="ウミガメが泳いでいる様子">
             </picture>
           </div>
@@ -560,7 +556,6 @@
           <a href="" class="commom-button">View more <span class="arrow"></span></a>
         </div>
         <div class="price__img is-sp">
-          <img src="./assets/images/common/price2.png" alt="" width="" height="" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -604,7 +599,6 @@
           </div>
         </div>
         <div class="contact__img">
-          <img src="./assets/images/common/contact2.png" alt="" width="" height="" loading="lazy" decoding="async">
         </div>
         <div class="layout-page-top page-top js-page-top">
           <img src="./assets/images/common/page-top.svg">
@@ -614,7 +608,7 @@
   </main>
 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer layout-footer">
     <div class="footer__inner inner">
       <div class="footer__head">
         <div class="footer__logo">

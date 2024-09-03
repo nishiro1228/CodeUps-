@@ -22,13 +22,11 @@
 }
 
 .campaign__container {
-  padding-bottom: rem(15) !important;
-  margin-left: rem(-4) !important;
+  padding-bottom: rem(15);
   margin-top: rem(25);
 
   @include mq(md) {
     margin-top: rem(37.8);
-    margin-left: rem(-24.8) !important;
   }
 }
 
@@ -38,10 +36,10 @@
 
 .campaign-button {
   text-align: center;
-  margin-top: rem(25.6);
+  margin-top: rem(70.4);
   padding-bottom: rem(4.96);
 
   @include mq(md) {
-    margin-top: rem(64);
+    margin-top: rem(80);
   }
 }

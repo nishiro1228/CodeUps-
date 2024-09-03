@@ -1,16 +1,17 @@
 @use "global" as *;
 
-.swiper {}
+.swiper {
+  padding-bottom: rem(10);
+}
 
 .swiper-button-prev,
 .swiper-button-next {
-  height: rem(80) !important;
-  width: rem(80) !important;
 }
+
 /* 矢印を消して画像に変更する */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: "" !important;
+  display: none;
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
@@ -28,7 +29,8 @@
   background-repeat: no-repeat;
 }
 
-.swiper-button-next {}
+.swiper-button-next {
+}
 
 .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {}
 
@@ -40,4 +42,18 @@
 
 .swiper-fade .swiper-slide-active  {
   height: inherit;
+}
+
+.swiper-horizontal {
+  padding-bottom: rem(10);
+}
+
+.swiper-button-prev.js-campaign-arrow {
+  width: 5rem;
+  height: 5rem;
+}
+
+.swiper-button-next.js-campaign-arrow {
+  width: 5rem;
+  height: 5rem;
 }

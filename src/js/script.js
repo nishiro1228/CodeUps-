@@ -5,7 +5,7 @@ $(function () {
         $(this).toggleClass("is-active");
         $(".js-drawer").fadeToggle();
 
-        // ハンバーガーメニューが開いたらヘッダーの背景色を赤に変更
+        // ハンバーガーメニューが開いたらヘッダーの背景色を緑に変更
         if ($(this).hasClass("is-active")) {
             $("header").addClass("header-green");
         } else {
