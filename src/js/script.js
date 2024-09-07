@@ -85,7 +85,7 @@ function checkDrawerHeight() {
       return false;
     });
 
-    const swiper = new Swiper(".js-swiper1", {
+    const swiper = new Swiper(".js-mv-swiper", {
         slidesPerView: 'auto', // または適切な数値を指定
         spaceBetween: 20, // または適切な間隔を指定
         loop: true,

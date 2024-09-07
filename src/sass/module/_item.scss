@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.item__title {
+.menu-item__title {
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: $bold;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.item__title::before {
+.menu-item__title::before {
   content: "";
   display: inline-block;
   width: rem(18);
@@ -23,11 +23,11 @@
   top: 0;
 }
 
-a:first-of-type .item__title {
+a:first-of-type .menu-item__title {
   margin-top: 0;
 }
 
-.item__sub-title {
+.menu-item__sub-title {
   margin-top: rem(24);
   font-size: rem(16);
   font-family: $base-font-family;

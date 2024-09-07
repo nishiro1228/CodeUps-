@@ -61,32 +61,7 @@
   }
 }
 
-.blog__item {
-  padding: rem(16) rem(16) rem(22.4) rem(16);
-
-
-  @include mq(md) {
-    padding: rem(16) rem(16) rem(19.2) rem(16);
-  }
-}
-
-.blog__card-img {}
-
-.blog__card-img img {
-  aspect-ratio: 301/201;
-  object-fit: cover;
-  height: auto;
-}
-
-.blog__title {
-  border-bottom: 1px solid $green;
-}
-
-.blog-card__wrap {
-  padding: rem(17.6) 0 0 0 !important;
-}
-
-.blog-button {
+.blog__button {
   margin-top: rem(40);
   text-align: center;
 

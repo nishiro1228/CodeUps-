@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.section-title {
+.section-title__main {
   font-size: rem(32);
   font-family: $english-font-family;
   font-weight: $regular;
@@ -12,10 +12,33 @@
   }
 }
 
-.sub-section-title {
+.section-title__main::first-letter {
+  color: $green;
+}
+
+.section-title__sub {
   display: block;
   font-size: rem(12);
   font-family: $base-font-family;
   font-weight: $regular;
   text-align: center;
+  color: $green;
+}
+
+// Modifier
+.section-title__main.section-title__main--white {
+  color: $white;
+}
+
+.section-title__main.section-title__main--white::first-letter {
+  color: $white;
+}
+
+.section-title__sub.section-title__sub--white {
+  color: $white;
+}
+
+.section-title__main.section-title__main--contact {
+  font-size: rem(80);
+  line-height: 1;
 }

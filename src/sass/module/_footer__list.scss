@@ -2,11 +2,11 @@
 
 .footer__list {}
 
-.footer__item {
+.menu-list__item {
   padding-left: rem(21.8);
 }
 
-.footer__item:nth-child(2) {
+.menu-list__item:nth-child(2) {
   order: 2;
   margin-top: rem(26);
 
@@ -17,7 +17,7 @@
   }
 }
 
-.footer__item:nth-child(3) {
+.menu-list__item:nth-child(3) {
   order: 1;
 
   @include mq(md) {
@@ -26,7 +26,7 @@
   }
 }
 
-.footer__item:nth-child(4) {
+.menu-list__item:nth-child(4) {
   order: 3;
   margin-top: rem(26);
 

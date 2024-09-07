@@ -145,3 +145,123 @@
   }
 }
 
+// Modifier
+.card__img.card__img--blog {
+  
+}
+
+.card__img.card__img--blog img {
+  aspect-ratio: 301/201;
+  object-fit: cover;
+  height: auto;
+}
+
+.card__wrap.card__wrap--blog {
+  padding: rem(17.6) 0 0 0;
+}
+
+.card__title.card__title--blog {
+  border-bottom: 1px solid $green;
+}
+
+.card__wrap.card__wrap--voice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: initial;
+  padding: 0;
+}
+
+.card__head.card__head--voice {
+  width: 50%;
+  border-bottom: 1px solid $green;
+
+  @include mq(md) {
+    max-width: rem(276);
+    width:  100%;
+  }
+}
+
+.card__body.card__body--voice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include mq(md) {
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: rem(21);
+  }
+}
+
+.card__detail.card__detail--voice {
+  font-size: rem(10.4);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc(18/12);
+  margin-top: rem(-4);
+
+  @include mq(md) {
+    font-size: rem(12);
+    margin-top: 0;
+  }
+}
+
+.card__category.card__category--voice {
+  display: inline-block;
+  padding: rem(2.8) rem(11.2);
+  border: 1px solid $green;
+  font-size: rem(12);
+  line-height: calc( 22/ 12);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: $green;
+  margin-top: rem(0.8);
+
+  @include mq(md) {
+    padding: rem(6) rem(16);
+    margin-top: 0;
+  }
+}
+
+.card__title.card__title--voice {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  padding-bottom: 0;
+
+  @include mq(md) {
+    font-size: rem(24);
+    margin-top: rem(5);
+  }
+}
+
+.card__wrap-img.card__wrap-img--voice {
+  max-width: rem(151);
+  margin-left: rem(13);
+
+  @include mq(md) {
+    max-width: rem(180);
+    margin-left: rem(16);
+  }
+}
+
+.card__wrap-img.card__wrap-img--voice img {
+  aspect-ratio: 151/117;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 180/140;
+  }
+}
+
+.card__text.card__text--voice {
+  margin-top: rem(15);
+  color: $black;
+  text-align: initial;
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

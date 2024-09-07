@@ -14,8 +14,8 @@
 }
 
 .mv__slider,
-.mv-swiper-slide__img,
-.mv-swiper-slide__img img {
+.mv__img,
+.mv__img img {
   height: inherit;
   min-height: inherit;
   width:  100%;
@@ -27,13 +27,13 @@
 
 .mv-swiper-slide {}
 
-.mv-swiper-slide__img {
+.mv__img {
   display: block;
   height: 100%;
   min-height: inherit;
 }
 
-.mv-swiper-slide__img img {
+.mv__img img {
   height: inherit;
   min-height: inherit;
   object-fit: cover;
