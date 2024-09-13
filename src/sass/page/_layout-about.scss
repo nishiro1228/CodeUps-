@@ -1,6 +1,7 @@
 @use "global" as *;
 .layout-about {
   margin-top: rem(75.2);
+  position: relative;
 
   @include mq(md) {
     margin-top: rem(130);

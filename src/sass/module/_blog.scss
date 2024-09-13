@@ -26,27 +26,31 @@
   }
 }
 
-.blog__inner {
-  position: relative;
-}
-
-.blog__bg {}
-
-.blog__img::before {
-  display: block;
+.blog::after {
+  display: none;
   height: rem(201);
   max-width: rem(437);
   width: 100%;
   position: absolute;
-  top: rem(-63);
-  left: calc(45.8% - min(44vw, 35.5rem));
+  top: rem(20);
+  left: calc(46.7% - min(44vw, 35.5rem));
   z-index: 1;
   content: "";
   background-image: url('../images/common/_キンギョハナダイ.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @include mq(md) {
+    display: block;
+  }
 }
+
+.blog__inner {
+  position: relative;
+}
+
+.blog__bg {}
 
 .blog__cards {
   width:  100%;

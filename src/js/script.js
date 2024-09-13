@@ -127,10 +127,10 @@ function checkDrawerHeight() {
                 spaceBetween: 40
             }
         },
-        autoplay: {
-            delay: 2500, // 自動再生の遅延時間を2.5秒に設定
-            disableOnInteraction: false, // ユーザーの操作後も自動再生を継続
-        },
+        // autoplay: {
+        //     delay: 2500, // 自動再生の遅延時間を2.5秒に設定
+        //     disableOnInteraction: false, // ユーザーの操作後も自動再生を継続
+        // },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

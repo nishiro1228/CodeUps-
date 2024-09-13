@@ -8,6 +8,7 @@
   color: $white;
   margin-top: rem(40);
   position: relative;
+  display: block;
 }
 
 .menu-item__title::before {
@@ -23,7 +24,7 @@
   top: 0;
 }
 
-a:first-of-type .menu-item__title {
+a:first-of-type.menu-item__title {
   margin-top: 0;
 }
 
@@ -34,4 +35,5 @@ a:first-of-type .menu-item__title {
   font-weight: $regular;
   line-height: calc(18/16);
   color: $white;
+  display: block;
 }

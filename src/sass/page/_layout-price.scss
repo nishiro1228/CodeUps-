@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .layout-price {
+  position: relative;
   background-color: $gray;
   margin-top: rem(80);
 
