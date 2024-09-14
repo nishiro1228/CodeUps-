@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.sub-section-title {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:  rem(40);
+  font-weight: $medium;
+  font-family: $english2-font-family;
+  color: $white;
+
+  @include mq(md) {
+    font-size:  rem(80);
+    font-weight: $regular;
+  }
+}

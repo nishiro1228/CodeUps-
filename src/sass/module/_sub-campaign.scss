@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.sub-campaign {
+  position: relative;
+}
+
+.sub-campaign::before {
+  background-image: url(../images/common/_キンギョハナダイsub-campaign.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 8.625rem;
+  left: calc(46.5% - min(44vw, 35.5rem));
+  max-width: 18.8125rem;
+  position: absolute;
+  top: -8.7375rem;
+  width: 100%;
+  width: 100%;
+  z-index: 1;
+  display: block;
+}
+
+.sub-layout-campaign {
+
+}
+
+.sub-campaign__inner {
+
+}
+
+.sub-campaign__container {
+  padding-bottom: rem(15);
+  margin-top: rem(25);
+
+  @include mq(md) {
+    margin-top: rem(37.8);
+  }
+}
+
+.sub-campaign__cards {
+  width:  100%;
+  display: grid;
+  gap: rem(80) rem(40);
+  grid-template-columns: repeat(1, 1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

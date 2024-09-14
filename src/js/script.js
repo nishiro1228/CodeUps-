@@ -2,11 +2,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // ハンバーガーメニュー
 $(function () {
     $(".js-hamburger").click(function () {
-        $(this).toggleClass("is-active");
+        $(this).toggleClass("is-active__hamburger");
         $(".js-drawer").fadeToggle();
 
         // ハンバーガーメニューが開いたらヘッダーの背景色を緑に変更
-        if ($(this).hasClass("is-active")) {
+        if ($(this).hasClass("is-active__hamburger")) {
             $("header").addClass("header-green");
         } else {
             $("header").removeClass("header-green");
@@ -18,7 +18,7 @@ $(function () {
 
     // ドロワーナビのaタグをクリックで閉じる
     $(".js-drawer a[href]").on("click", function () {
-        $(".js-hamburger").removeClass("is-active");
+        $(".js-hamburger").removeClass("is-active__hamburger");
         $(".js-drawer").fadeOut();
 
         // ヘッダーの背景色を元に戻す
@@ -28,7 +28,7 @@ $(function () {
     // resizeイベント
     $(window).on('resize', function() {
         if (window.matchMedia("(min-width: 768px)").matches) {
-            $(".js-hamburger").removeClass("is-active");
+            $(".js-hamburger").removeClass("is-active__hamburger");
             $(".js-drawer").fadeOut();
 
             // ヘッダーの背景色を元に戻す
@@ -85,6 +85,17 @@ function checkDrawerHeight() {
       return false;
     });
 
+    // タブ
+    jQuery(function ($) {
+      $('.js-tab-menu').on('click', function () {
+          $('.js-tab-menu').removeClass('is-active__tab');
+          $('.js-tab-content').removeClass('is-active__tab');
+          $(this).addClass('is-active__tab');
+          var number = $(this).data("number");
+          $('#' + number).addClass('is-active__tab');
+      });
+  });
+
     const swiper = new Swiper(".js-mv-swiper", {
         slidesPerView: 'auto', // または適切な数値を指定
         spaceBetween: 20, // または適切な間隔を指定
@@ -97,33 +108,14 @@ function checkDrawerHeight() {
       },
     });
   
-    const campaign_slideLength = document.querySelectorAll('.js-campaign-swiper .swiper-slide').length;
-    $(window).resize(function () {
-      campaign_arrow();
-    });
-    campaign_arrow();
-  
-    function campaign_arrow() {
-      if (window.matchMedia('(max-width: 767px)').matches || campaign_slideLength <= 3) {
-          $('.js-campaign-arrow').hide();
-      } else {
-          $('.js-campaign-arrow').show();
-      }
-    }
-  
     // Swiper
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
         loop: true,
         speed: 1200, // スライドの移動速度を1.2秒に設定
-        slidesPerView: 1.5,
+        slidesPerView: "auto",
         spaceBetween: 20,
         breakpoints: {
-            600: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
             768: {
-                slidesPerView: 3.5,
                 spaceBetween: 40
             }
         },

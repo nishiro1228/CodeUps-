@@ -1,8 +1,6 @@
 @use "global" as *;
 
 body {
-  // height: 100%;
-  // overflow: hidden;
 }
 
 .header {
@@ -126,12 +124,6 @@ body {
   height: rem(16);
 }
 
-.is-active {
-  right: rem(10.4);
-  margin-top: rem(-7.7);
-  width: rem(41);
-}
-
 .header__hamburger span {
   position: absolute;
   left: 0;
@@ -155,16 +147,16 @@ body {
   top: rem(20);
 }
 
-.header__hamburger.is-active span:nth-child(1) {
+.header__hamburger.is-active__hamburger span:nth-child(1) {
   -webkit-transform: translateY(18px) rotate(37deg);
   transform: translateY(18px) rotate(37deg);
 }
 
-.header__hamburger.is-active span:nth-child(2) {
+.header__hamburger.is-active__hamburger span:nth-child(2) {
   opacity: 0;
 }
 
-.header__hamburger.is-active span:nth-child(3) {
+.header__hamburger.is-active__hamburger span:nth-child(3) {
   -webkit-transform: translateY(-5px) rotate(-38deg);
   transform: translateY(-5px) rotate(-38deg);
 }

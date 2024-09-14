@@ -52,19 +52,6 @@
 
 .blog__bg {}
 
-.blog__cards {
-  width:  100%;
-  display: grid;
-  margin-top: rem(27.2);
-  gap: rem(40);
-  grid-template-columns: repeat(1, 1fr);
-
-  @include mq(md) {
-    margin-top: rem(80);
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .blog__button {
   margin-top: rem(40);
   text-align: center;

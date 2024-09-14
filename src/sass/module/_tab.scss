@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.tab__menu {
+  display: flex;
+}
+
+.tab__menu-item {
+  padding: rem(6);
+  min-width: rem(162);
+  width: fit-content;
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: 1;
+  color: $green;
+  border: 1px solid $green;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab__menu-item + .tab__menu-item {
+  margin-left: rem(20);
+  @include mq(md){
+      margin-left: rem(30);
+  }
+}
+
+.tab__menu-item.is-active__tab {
+  color: #fff;
+  background-color: $green;
+}

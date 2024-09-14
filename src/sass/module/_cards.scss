@@ -1,6 +1,16 @@
 @use "global" as *;
 
-.cards__item {}
+.cards__item {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cards__item.swiper-slide {
+  width: rem(280);
+
+  @include mq(md) {
+    width: rem(333);
+  }
+}
 
 .cards__item a {}
 

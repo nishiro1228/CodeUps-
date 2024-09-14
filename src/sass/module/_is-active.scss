@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.is-active {
+  right: rem(10.4);
+  width: rem(41);
+}
+
+// Modifier
+.is-active__hamburger {
+  margin-top: rem(-7);
+  right: rem(10.4);
+  width: rem(41);
+}
