@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.layout-contact {
+.layout-sub-blog {
   position: relative;
-  margin-top: rem(80);
+  margin-top: rem(52);
 
   @include mq(md) {
-    margin-top: rem(132);
+    margin-top: rem(150);
   }
 }

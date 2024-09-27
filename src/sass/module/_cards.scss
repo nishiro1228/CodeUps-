@@ -14,3 +14,12 @@
 
 .cards__item a {}
 
+// Modifier
+.cards__item.cards__item--small {
+  max-width: rem(280);
+  margin-inline: auto;
+
+  @include mq(md) {
+    max-width: rem(520);
+  }
+}

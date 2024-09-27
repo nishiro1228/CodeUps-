@@ -96,6 +96,64 @@ function checkDrawerHeight() {
       });
   });
 
+//   Informationタブ
+jQuery(function ($) {
+    $('.js-information-tab-menu').on('click', function () {
+        $('.js-information-tab-menu').removeClass('is-active__information-tab');
+        $('.js-information-tab-content').removeClass('is-active__information-tab');
+        $(this).addClass('is-active__information-tab');
+        var number = $(this).data("number");
+        $('#' + number).addClass('is-active__information-tab');
+    });
+});
+
+  // モーダル
+$(function () {
+  const open = $(".js-modal-open"),
+      close = $(".js-modal-close"),
+      modals = $(".js-modal");
+
+  // 開くボタンをクリックしたらモーダルを表示する
+  open.on("click", function () {
+      var target = $(this).data("target"); // 追加
+      var targetModal = document.getElementById(target); // 追加
+      $(targetModal).addClass("is-open__about");
+  });
+
+  // 閉じるボタンをクリックしたらモーダルを閉じる
+  close.on("click", function () {
+      var target = $(this).data("target"); // 追加
+      var targetModal = document.getElementById(target); // 追加
+      $(targetModal).removeClass("is-open__about");
+  });
+
+  // モーダルの背景部分をクリックしたらモーダルを閉じる
+  modals.on("click", function () {
+      $(this).removeClass("is-open__about");
+  });
+});
+
+jQuery(function ($) {
+    $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-open__a');
+    });
+});
+
+
+// // .s_07 .accordion_one
+// $(function(){
+//   //.accordion_oneの中の.accordion_headerがクリックされたら
+//   $('.s_07 .accordion_one .accordion_header').click(function(){
+//     //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
+//     $(this).next('.accordion_inner').slideToggle();
+//     $(this).toggleClass("open");
+//   });
+// });
+
+
+
+
     const swiper = new Swiper(".js-mv-swiper", {
         slidesPerView: 'auto', // または適切な数値を指定
         spaceBetween: 20, // または適切な間隔を指定

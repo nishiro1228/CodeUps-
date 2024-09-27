@@ -177,9 +177,30 @@
 }
 
 .card__title.card__title--large {
-  font-size:  rem(24);
+  font-size:  rem(16);
+  font-family: $base-font-family;
+  font-weight: $medium;
+
+  @include mq(md) {
+    font-size:  rem(24);
+  }
+}
+
+.card__title.card__title--center {
+  text-align: center;
 }
 
 .card__text.card__text--campaign {
   margin-top: rem(24);
+}
+
+.card__img.card__img--small img {
+  width: 100%;
+  aspect-ratio: 294/188;
+  object-fit: cover;
+  transition: .6s;
+}
+
+.card__wrap.card__wrap--small {
+  padding: rem(9.6) rem(16) rem(24) rem(16);
 }

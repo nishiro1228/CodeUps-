@@ -10,15 +10,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
-  height: 8.625rem;
-  left: calc(46.5% - min(44vw, 35.5rem));
-  max-width: 18.8125rem;
+  height: rem(55);
+  left: calc(46.5% - min(42vw, 35.5rem));
+  max-width: rem(120);
   position: absolute;
-  top: -8.7375rem;
-  width: 100%;
+  top: -9.3375rem;
   width: 100%;
   z-index: 1;
   display: block;
+
+  @include mq(md) {
+    max-width: 18.8125rem;
+    height: 8.625rem;
+    top: -8.7375rem;
+    left: calc(46.5% - min(44vw, 35.5rem));
+  }
 }
 
 .sub-layout-campaign {
@@ -31,7 +37,7 @@
 
 .sub-campaign__container {
   padding-bottom: rem(15);
-  margin-top: rem(25);
+  margin-top: rem(44.2);
 
   @include mq(md) {
     margin-top: rem(37.8);
@@ -41,10 +47,11 @@
 .sub-campaign__cards {
   width:  100%;
   display: grid;
-  gap: rem(80) rem(40);
+  gap: rem(40);
   grid-template-columns: repeat(1, 1fr);
 
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
+    gap: rem(80) rem(40);
   }
 }

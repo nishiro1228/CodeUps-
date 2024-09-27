@@ -2,7 +2,7 @@
 
 .sub-section-title {
   position: absolute;
-  top: 59%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size:  rem(40);
@@ -13,5 +13,6 @@
   @include mq(md) {
     font-size:  rem(80);
     font-weight: $regular;
+    top: 59%;
   }
 }

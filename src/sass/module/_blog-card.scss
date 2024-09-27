@@ -31,3 +31,9 @@
   text-align: left;
   margin-top: rem(19.6);
 }
+
+// Modifier
+.blog-card__title.blog-card__title--sub-blog {
+  border-bottom: none;
+  font-weight: $medium;
+}
