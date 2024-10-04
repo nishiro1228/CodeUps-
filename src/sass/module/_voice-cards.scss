@@ -28,3 +28,12 @@
     padding: rem(24);
   }
 }
+
+// Modifier
+.voice-cards.voice-cards--sub {
+  gap: rem(40);
+
+  @include mq(md) {
+    gap: rem(80) rem(40);
+  }
+}

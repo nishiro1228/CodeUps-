@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-accordion {
+  margin-top: rem(51.2);
+
+  @include mq(md) {
+    margin-top: rem(149.2);
+  }
+}

@@ -141,15 +141,12 @@ jQuery(function ($) {
 });
 
 
-// // .s_07 .accordion_one
-// $(function(){
-//   //.accordion_oneの中の.accordion_headerがクリックされたら
-//   $('.s_07 .accordion_one .accordion_header').click(function(){
-//     //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
-//     $(this).next('.accordion_inner').slideToggle();
-//     $(this).toggleClass("open");
-//   });
-// });
+$('.accordion__header:nth-child(1)').addClass('active-faq');
+$('.accordion__content:nth-child(2)').css('display', 'block');
+$('.accordion__header').click(function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass('active-faq');
+});
 
 
 

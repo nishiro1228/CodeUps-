@@ -16,7 +16,7 @@
   left: calc(47% - min(44vw, 35.5rem));
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 
   @include mq(md) {
     display: block;
@@ -60,4 +60,13 @@
   @include mq(md) {
     margin-top: rem(80);
   }
+}
+
+// Modifier
+.voice.voice--sub::before {
+  top: rem(-143);
+}
+
+.voice.voice--sub::after {
+  display: none;
 }

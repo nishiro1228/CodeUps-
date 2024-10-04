@@ -30,10 +30,50 @@
 .blog-card__text {
   text-align: left;
   margin-top: rem(19.6);
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: calc( 24/ 16);
 }
 
 // Modifier
 .blog-card__title.blog-card__title--sub-blog {
   border-bottom: none;
   font-weight: $medium;
+}
+
+.blog-card.blog-card--sub-blog2 {
+  padding: 0;
+  background-color: initial;
+  box-shadow: initial;
+}
+
+.blog-card__wrap.blog-card__wrap--sub-blog2 {
+  padding: 0;
+}
+
+.blog-card__title.blog-card__title--large {
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: $medium;
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.blog-card__img.blog-card__img--sub-blog2 {
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.blog-card__text.blog-card__text--sub-blog2 {
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(35.6);
+  }
 }

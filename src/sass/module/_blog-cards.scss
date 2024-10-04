@@ -30,3 +30,14 @@
     gap: rem(80) rem(40);
   }
 }
+
+.blog-cards.blog-cards--sub-blog2 {
+  display: grid;
+  gap: rem(40);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 0;
+
+  @include mq(md) {
+    gap: rem(80) rem(40);
+  }
+}

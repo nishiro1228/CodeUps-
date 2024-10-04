@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.sub-price-list-sp {
+  width: 100%;
+  line-height: 1;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.sub-price__list-sp + .sub-price__list-sp {
+  margin-top: rem(38.4);
+}
+
+.sub-price-list-sp__head {
+  position: relative;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: calc( 24/ 16);
+  color: $white;
+  background-color: $green;
+  padding: rem(8);
+}
+
+.sub-price-list-sp__head::before {
+  background-image: url(../images/common/information-tab-white.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: rem(24);
+  left: calc(47% - min(44vw, 3.8rem));
+  max-width: rem(24);
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  z-index: 1;
+}
+
+.sub-price-list-sp__title {
+  padding-left: rem(30);
+}
+
+.sub-price-list-sp__date {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc( 24/ 16);
+  height: rem(60);
+}
+
+.sub-price-list-sp__fee {
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: calc( 24/ 16);
+  width: rem(106);
+}
+

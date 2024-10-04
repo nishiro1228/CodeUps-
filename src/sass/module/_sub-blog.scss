@@ -52,10 +52,12 @@
   margin-inline: auto;
   max-width: rem(600);
   width: 100%;
+  margin-top: rem(90);
 
   @include mq(md) {
     margin-left: rem(80);
     max-width: rem(294);
+    margin-top: 0;
   }
 }
 
@@ -249,4 +251,42 @@
   display: none;
   padding: 0;
   box-sizing: border-box;
+}
+
+.sub-blog__items {
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.sub-blog__item {
+  position: relative;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: calc( 24/ 16);
+  padding-left: rem(30);
+}
+
+.sub-blog__item + .sub-blog__item {
+  margin-top: rem(4);
+}
+
+.sub-blog__item::before {
+  background-image: url(../images/common/_ヒトデ.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: rem(18);
+    left: 0;
+    max-width: rem(18);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
 }
