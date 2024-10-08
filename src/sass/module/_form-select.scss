@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.form-select select {
+  position: relative;
+  padding: rem(10.6) rem(11.6) rem(10.6) rem(8.6);
+  width: 100%;
+  font-size: rem(12);
+  border-radius: 0;
+  border: 1px solid $green;
+  background-image: url(../images/common/Polygon3.png);
+  background-repeat: no-repeat;
+  background-size: rem(15);
+  background-position: right rem(15) top rem(15);
+  appearance: none;
+  cursor: pointer;
+
+  @include mq(md) {
+  padding: rem(5.8) rem(331.6) rem(5.8) rem(15);
+  }
+}
+
+.form-select::before {
+  width: 12px;
+  height: 12px;
+  background-color: $green;
+  clip-path: polygon(50% 12px, 0% 0%, 12px 0%);
+  content: "";
+  right: calc(66.3% - min(44vw, 36rem));
+  bottom: rem(-495);
+  position: absolute;
+  z-index: -1;
+}
+
+.form-select select::-ms-expand {
+  display: none;
+}
+
+.form-select select:focus {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}

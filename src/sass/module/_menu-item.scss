@@ -19,7 +19,6 @@ a:first-of-type.menu-item__title {
   font-family: $base-font-family;
   font-weight: $bold;
   line-height: calc(18/16);
-  color: $white;
   margin-top: rem(40);
   position: relative;
   display: block;
@@ -36,4 +35,12 @@ a:first-of-type.menu-item__title {
   position: absolute;
   left: rem(-25);
   top: 0;
+}
+
+.menu-item__title.menu-item__title--bold.menu-item__title--black::before {
+  background-image: url('../images/common/_ヒトデblack.webp');
+}
+
+.menu-item__title.menu-item__title--black {
+  color: $black;
 }

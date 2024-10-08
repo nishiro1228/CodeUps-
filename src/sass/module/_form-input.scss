@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.form-input input {
+	padding: rem(8) rem(15);
+	width: 100%;
+	font-size: rem(15);
+	line-height: 1;
+	border-radius: 0;
+	border: 1px solid $green;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+}
+
+.form-input input:focus {
+	border: 1px solid $green;
+	box-shadow: none;
+	outline: none;
+}
+
+.form-input input::placeholder {
+  color: $gray;
+}
+
+.form-input.form-input--error input {
+	background-color: rgba(201, 72, 0, 0.2);
+	border: 1px solid $red;
+}

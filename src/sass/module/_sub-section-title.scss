@@ -9,6 +9,7 @@
   font-weight: $medium;
   font-family: $english2-font-family;
   color: $white;
+  white-space: nowrap;
 
   @include mq(md) {
     font-size:  rem(80);

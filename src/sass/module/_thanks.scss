@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.thanks {
+  position: relative;
+}
+
+.thanks::before {
+  background-image: url(../images/common/voice3.1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  max-width: rem(120);
+  height: rem(55);
+  top: -1.5375rem;
+  left: calc(48% - min(44vw, 36rem));  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  @include mq(md) {
+    max-width: 18.8125rem;
+    height: 8.625rem;
+    top: -4.3375rem;
+    left: calc(47% - min(44vw, 36rem));
+  }
+}
+
+
+.thanks__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+  padding-left: rem(15);
+  padding-right: rem(15);
+
+  @include mq(md) {
+    max-width: rem(654);
+  }
+}
+
+.thanks__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  text-align: center;
+  line-height: calc( 18/ 16);
+}
+
+.thanks__text-body {
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  margin-top: rem(40);
+  text-align: center;
+}
+

@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.sitemap {
+  position: relative;
+}
+
+.sitemap::before {
+  background-image: url(../images/common/voice3.1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  max-width: rem(120);
+  height: rem(55);
+  top: -1.5375rem;
+  left: calc(48% - min(44vw, 36rem));  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  @include mq(md) {
+    max-width: 18.8125rem;
+    height: 8.625rem;
+    top: -4.9375rem;
+    left: calc(47% - min(44vw, 36rem));
+    display: none;
+  }
+}

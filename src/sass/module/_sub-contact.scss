@@ -1,0 +1,133 @@
+@use "global" as *;
+
+.sub-contact {
+  position: relative;
+}
+
+.sub-contact::before {
+  background-image: url(../images/common/voice3.1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  max-width: rem(120);
+  height: rem(55);
+  top: -1.5375rem;
+  left: calc(48% - min(44vw, 36rem));  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  @include mq(md) {
+    max-width: 18.8125rem;
+    height: 8.625rem;
+    top: -4.3375rem;
+    left: calc(47% - min(44vw, 36rem));
+  }
+}
+
+.sub-contact__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+  padding-left: rem(15);
+  padding-right: rem(15);
+
+  @include mq(md) {
+    max-width: rem(750);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+  }
+}
+
+.sub-contact__error-text {
+  color: $red;
+  text-align: left;
+  margin-bottom: rem(40);
+  font-size: rem(14);
+  font-weight: $regular;
+  text-indent: -5%;
+  max-width: rem(224);
+  width: 100%;
+  margin-inline: auto;
+
+  @include mq(md) {
+    max-width: rem(349);
+    text-align: center;
+  }
+}
+
+.sub-contact__form {}
+
+.sub-contact__form-privacy {
+  margin-top: rem(36.8);
+  @include mq(md){
+      margin-top: rem(71.2);
+      text-align: center;
+  }
+}
+
+.sub-contact__form-privacy input {
+  display: none;
+}
+
+.sub-contact__form-privacy input + span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 rem(60.8);
+  position: relative;
+  font-size: rem(14);
+  line-height: calc( 22/ 14);
+}
+
+.sub-contact__form-privacy input + span::before {
+  content: "";
+  position: absolute;
+  top: rem(0.2);
+  left: rem(32);
+  background: #fff;
+  border: 1px solid $green;
+  display: block;
+  width: rem(20);
+  height: rem(20);
+
+  @include mq(md) {
+    left: 0;
+  }
+}
+
+.sub-contact__form-privacy input + span::after {
+  content: "";
+  margin-top: rem(-2);
+  position: absolute;
+  top: rem(7.2);
+  left: rem(34);
+  transform: rotate(-45deg);
+  display: block;
+  width: rem(15);
+  height: rem(8);
+  border-bottom: rem(3) solid $red;
+  border-left: rem(3) solid $red;
+  transition: .3s;
+  opacity: 0;
+
+  @include mq(md) {
+  left: rem(2);
+  }
+}
+
+.sub-contact__form-privacy input + span a {
+  text-decoration: underline;
+}
+
+.sub-contact__form-privacy input:checked + span::after {
+  opacity: 1;
+}
+
+.sub-contact__button {
+  text-align: center;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

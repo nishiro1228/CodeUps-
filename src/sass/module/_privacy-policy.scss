@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.privacy-policy {
+  position: relative;
+}
+
+.privacy-policy::before {
+  background-image: url(../images/common/voice3.1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  max-width: rem(120);
+  height: rem(55);
+  top: -1.5375rem;
+  left: calc(48% - min(44vw, 36rem));  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  @include mq(md) {
+    max-width: 18.8125rem;
+    height: 8.625rem;
+    top: -5.8375rem;
+    left: calc(47% - min(44vw, 36rem));
+  }
+}
+
+.privacy-policy__inner {
+  max-width: rem(348.8);
+  width: 100%;
+  margin-inline: auto;
+  padding-left: rem(15);
+  padding-right: rem(15);
+
+  @include mq(md) {
+    max-width: rem(850);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+  }
+}
+
+.privacy-policy__title {
+  font-size: rem(24);
+  font-weight: $medium;
+  font-family: $base-font-family;
+  text-indent: rem(-13.2);
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.privacy-policy__items {
+  margin-top: rem(40);
+  line-height: calc( 32/ 16);
+  font-size: rem(16);
+}
+
+.privacy-policy__item {
+
+}
+
+.privacy-policy__item + .privacy-policy__item {
+  margin-top: rem(32);
+}
+
+.privacy-policy__text {
+  text-indent: rem(-13.2);
+}
+
+.privacy-policy__numbers {
+
+}
+
+.privacy-policy__number {
+  text-indent: rem(-8.2);
+}
+

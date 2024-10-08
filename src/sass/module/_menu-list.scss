@@ -45,3 +45,21 @@
     margin-left: rem(5);
   }
 }
+
+.menu-list__item.menu-list__item--sitemap:nth-child(2) {
+  @include mq(md) {
+    margin-left: rem(32);
+  }
+}
+
+.menu-list__item.menu-list__item--sitemap:nth-child(3) {
+  @include mq(md) {
+    margin-left: rem(73);
+  }
+}
+
+.menu-list__item.menu-list__item--sitemap:nth-child(4) {
+  @include mq(md) {
+    margin-left: rem(85);
+  }
+}

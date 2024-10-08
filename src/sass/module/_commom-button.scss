@@ -84,3 +84,33 @@ a:hover span::after,
 a:hover span::before {
   background: $green;
 }
+
+.commom-button.commom-button--send {
+  max-width: rem(202);
+  width: 100%;
+  padding: rem(16) rem(88) rem(16) rem(51.2);
+}
+
+.arrow.arrow--send::before {
+	right: 4em;
+}
+
+.arrow.arrow--send::after {
+	right: 4em;
+}
+
+.commom-button.commom-button--invert {
+  color: $green;
+  background-color: $white;
+}
+
+.commom-button.commom-button--invert::before {
+  border: 1px solid $white;
+}
+
+.arrow.arrow--invert::before {
+	background: $green
+}
+.arrow.arrow--invert::after {
+	background-color: $green;
+}
