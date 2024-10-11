@@ -4,12 +4,14 @@
   display: grid;
   gap: rem(16) rem(21);
   grid-template-columns: repeat(2, 1fr);
-  max-width: rem(744);
+  max-width: rem(600);
   width:  100%;
+  margin-inline: auto;
 
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
     gap: rem(32);
+    max-width: rem(744);
   }
 }
 

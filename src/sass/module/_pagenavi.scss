@@ -3,15 +3,17 @@
 .pagenavi {}
 
 .pagenavi__inner {
-  margin-top: rem(51.2);
+  margin-top: rem(68.8);
+  max-width: rem(703);
+  width:  100%;
   margin-inline: auto;
-  padding: 0 rem(20);
-  max-width: rem(600);
-  width: 100%;
+  padding-left: rem(15);
+  padding-right: rem(15);
+
   @include mq(md){
-    padding: 0 rem(25);
-    max-width: rem(1200);
-    margin-top: rem(80);
+    margin-top: rem(70.4);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
   }
 }
 
@@ -20,9 +22,43 @@
   text-align: center;
 }
 
-.pagenavi .wp-pagenavi a,
-.pagenavi .wp-pagenavi span {
-  margin: 0 rem(3);
+.previouspostslink {
+  margin-right: rem(21);
+  padding: rem(9) rem(9.6);
+  font-size: rem(16);
+  font-family: $english2-font-family;
+  font-weight: $bold;
+  line-height: 1;
+  white-space: nowrap;
+  border: 1px solid $green;
+  background-color: $white;
+  color: $green;
+  transition: .3s;
+
+  @include mq(md) {
+    margin-right: rem(37);
+  }
+}
+
+.nextpostslink {
+  margin-left: rem(22.2);
+  padding: rem(9) rem(9.2);
+  font-size: rem(16);
+  font-family: $english2-font-family;
+  font-weight: $bold;
+  line-height: 1;
+  white-space: nowrap;
+  border: 1px solid $green;
+  background-color: $white;
+  color: $green;
+  transition: .3s;
+
+   @include mq(md) {
+    margin-left: rem(38.2);
+   }
+}
+
+.page-larger {
   padding: rem(9) rem(14);
   font-size: rem(16);
   font-family: $english2-font-family;
@@ -33,6 +69,10 @@
   background-color: $white;
   color: $green;
   transition: .3s;
+}
+
+.page-larger + .page-larger {
+  margin-left: rem(11);
 }
 
 .pagenavi .wp-pagenavi a:hover {
@@ -46,4 +86,48 @@
   color: #fff;
   background-color: $green;
   border-color: $green;
+}
+
+.pagenavi__inner.pagenavi__inner--blog {
+  margin-top: rem(68.8);
+
+  @include mq(md){
+    margin-top: rem(88);
+  }
+}
+
+.pagenavi__inner.pagenavi__inner--blog2 {
+  margin-top: rem(51.2);
+
+  @include mq(md) {
+    margin-top: rem(91.2);
+  }
+}
+
+.pagenavi__inner.pagenavi__inner--voice {
+  margin-top: rem(88);
+
+  @include mq(md) {
+    margin-top: rem(70.4);
+  }
+}
+
+.previouspostslink.previouspostslink--blog2 {
+  margin-right: rem(37);
+}
+
+.nextpostslink.nextpostslink--blog2 {
+  margin-left: rem(38.2);
+}
+
+.previouspostslink.previouspostslink--voice {
+  margin-right: rem(37);
+}
+
+.nextpostslink.nextpostslink--voice {
+  margin-left: rem(37.2);
+
+  @include mq(md) {
+    margin-left: rem(38.2);
+  }
 }

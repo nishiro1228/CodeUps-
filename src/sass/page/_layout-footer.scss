@@ -7,3 +7,11 @@
     margin-top: rem(160);
   }
 }
+
+.layout-footer.layout-footer--404 {
+  margin-top: rem(36);
+  
+  @include mq(md) {
+    margin-top: rem(160);
+  }
+}

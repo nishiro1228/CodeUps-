@@ -26,7 +26,7 @@
 }
 
 .privacy-policy__inner {
-  max-width: rem(348.8);
+  max-width: rem(600);
   width: 100%;
   margin-inline: auto;
   padding-left: rem(15);
@@ -76,3 +76,10 @@
   text-indent: rem(-8.2);
 }
 
+.privacy-policy__title.privacy-policy__title--no-indent {
+  text-indent: initial;
+}
+
+.privacy-policy__text.privacy-policy__text--no-indent {
+  text-indent: initial;
+}

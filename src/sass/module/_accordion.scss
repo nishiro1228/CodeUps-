@@ -82,6 +82,7 @@
 
   @include mq(md) {
     width: rem(32);
+    right: rem(36);
   }
 }
 .accordion__header::after{

@@ -47,7 +47,7 @@
 .sub-campaign__cards {
   width:  100%;
   display: grid;
-  gap: rem(40);
+  gap: rem(33.6);
   grid-template-columns: repeat(1, 1fr);
 
   @include mq(md) {

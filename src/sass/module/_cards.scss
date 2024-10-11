@@ -16,10 +16,6 @@
 
 // Modifier
 .cards__item.cards__item--small {
-  max-width: rem(280);
+  max-width: rem(520);
   margin-inline: auto;
-
-  @include mq(md) {
-    max-width: rem(520);
-  }
 }
