@@ -1,19 +1,19 @@
 @use "global" as *;
 
 .sub-mv {
-  min-height: rem(400);
+  height: rem(548);
 }
 
 .sub-mv__inner {
-  min-height: inherit;
+  height: inherit;
   position: relative;
   width:  100%;
 }
 
 .sub-mv__img {
-  min-height: inherit;
+  height: inherit;
 }
 
 .sub-mv__img img {
-  min-height: inherit;
+  height: inherit;
 }

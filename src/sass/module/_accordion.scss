@@ -85,10 +85,11 @@
     right: rem(36);
   }
 }
-.accordion__header::after{
+.accordion__header::after {
   transform:rotate(-90deg);
   transition:transform 0.3s;
 }
+
 .accordion__header.active-faq::after{transform:rotate(0deg);}
 
 .accordion__content {

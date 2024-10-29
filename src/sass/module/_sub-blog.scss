@@ -233,24 +233,6 @@
   margin: auto;
 }
 
-.sub-blog__archive .sub-blog__archive-container .sub-blog__archive-header .i_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #fff;
-  margin-top: -20px;
-  box-sizing: border-box;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transform-origin: center center;
-  transition-duration: 0.2s;
-}
-
 .sub-blog__archive .sub-blog__archive-container .sub-blog__archive-body {
   display: none;
   padding: 0;

@@ -4,20 +4,18 @@
   display: grid;
   gap: rem(16) rem(21);
   grid-template-columns: repeat(2, 1fr);
-  max-width: rem(600);
-  width:  100%;
-  margin-inline: auto;
 
   @include mq(md) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: rem(32);
-    max-width: rem(744);
   }
 }
 
 .tab__menu-item {
   padding: rem(8) rem(27);
+  max-width: rem(162);
   min-width: rem(162);
+  height: rem(34);
   width: fit-content;
   font-size: rem(14);
   font-weight: $regular;
@@ -30,18 +28,17 @@
   cursor: pointer;
   flex: 1 1 100%;
   white-space: nowrap;
+  transition: .3s;
 
   @include mq(md) {
     flex: initial;
   }
 }
 
-// .tab__menu-item + .tab__menu-item {
-//   margin-left: rem(20);
-//   @include mq(md){
-//       margin-left: rem(30);
-//   }
-// }
+.tab__menu-item:hover {
+  color: $white;
+  background-color: $green;
+}
 
 .tab__menu-item.is-active__tab {
   color: #fff;

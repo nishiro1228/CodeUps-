@@ -73,7 +73,7 @@
 .sub-contact__form-privacy input + span {
   cursor: pointer;
   display: inline-block;
-  padding: 0 0 0 rem(60.8);
+  padding: rem(5) 0 0 rem(36.8);
   position: relative;
   font-size: rem(14);
   line-height: calc( 22/ 14);
@@ -87,11 +87,12 @@
   background: #fff;
   border: 1px solid $green;
   display: block;
-  width: rem(20);
-  height: rem(20);
+  width: rem(21.6);
+  height: rem(21.6);
 
   @include mq(md) {
-    left: 0;
+    top: rem(3.6);
+    left: rem(-1.4);
   }
 }
 
@@ -99,7 +100,7 @@
   content: "";
   margin-top: rem(-2);
   position: absolute;
-  top: rem(7.2);
+  top: rem(10.4);
   left: rem(34);
   transform: rotate(-45deg);
   display: block;
@@ -130,4 +131,9 @@
   @include mq(md) {
     margin-top: rem(40);
   }
+}
+
+.sub-contact__form-privacy a:hover {
+  transition: .3s;
+  opacity: .7;
 }

@@ -1,7 +1,26 @@
 @use "global" as *;
 
 .gallery {
+  position: relative;
+}
 
+.gallery::before {
+  background-image: url(../images/common/contact2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  top: rem(-68);
+  content: "";
+  height: 8.625rem;
+  position: absolute;
+  right: calc(50% - min(48vw, 40rem));
+  width: 18.8125rem;
+  z-index: 1;
+
+  @include mq(md) {
+    display: block;
+  }
 }
 
 .gallery__inner {

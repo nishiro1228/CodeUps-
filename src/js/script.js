@@ -108,47 +108,50 @@ jQuery(function ($) {
 });
 
   // モーダル
-$(function () {
-  const open = $(".js-modal-open"),
-      close = $(".js-modal-close"),
-      modals = $(".js-modal");
-
-  // 開くボタンをクリックしたらモーダルを表示する
-  open.on("click", function () {
-      var target = $(this).data("target"); // 追加
-      var targetModal = document.getElementById(target); // 追加
-      $(targetModal).addClass("is-open__about");
+  $(function () {
+    const open = $(".js-modal-open"),
+        close = $(".js-modal-close"),
+        modals = $(".js-modal");
+  
+    // 開くボタンをクリックしたらモーダルを表示し、スクロールを無効にする
+    open.on("click", function () {
+        var target = $(this).data("target"); // モーダルのターゲットIDを取得
+        var targetModal = document.getElementById(target); // ターゲットのモーダルを取得
+        $(targetModal).addClass("is-open__about"); // モーダルを表示
+        $("body").addClass("no-scroll"); // スクロールを無効にする
+    });
+  
+    // 閉じるボタンをクリックしたらモーダルを閉じ、スクロールを有効に戻す
+    close.on("click", function () {
+        var target = $(this).data("target"); // モーダルのターゲットIDを取得
+        var targetModal = document.getElementById(target); // ターゲットのモーダルを取得
+        $(targetModal).removeClass("is-open__about"); // モーダルを閉じる
+        $("body").removeClass("no-scroll"); // スクロールを有効にする
+    });
+  
+    // モーダルの背景部分をクリックしたらモーダルを閉じ、スクロールを有効に戻す
+    modals.on("click", function (e) {
+        if (e.target === this) { // モーダルの背景部分をクリックした場合のみ
+            $(this).removeClass("is-open__about"); // モーダルを閉じる
+            $("body").removeClass("no-scroll"); // スクロールを有効にする
+        }
+    });
   });
 
-  // 閉じるボタンをクリックしたらモーダルを閉じる
-  close.on("click", function () {
-      var target = $(this).data("target"); // 追加
-      var targetModal = document.getElementById(target); // 追加
-      $(targetModal).removeClass("is-open__about");
-  });
-
-  // モーダルの背景部分をクリックしたらモーダルを閉じる
-  modals.on("click", function () {
-      $(this).removeClass("is-open__about");
-  });
-});
 
 jQuery(function ($) {
-    $('.js-faq-question').on('click', function () {
-        $(this).next().slideToggle();
-        $(this).toggleClass('is-open__a');
-    });
-});
-
-
-$('.accordion__header:nth-child(1)').addClass('active-faq');
+    $('.accordion__header:nth-child(1)').addClass('active-faq');
 $('.accordion__content:nth-child(2)').css('display', 'block');
 $('.accordion__header').click(function() {
   $(this).next().slideToggle();
   $(this).toggleClass('active-faq');
 });
 
-
+    $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-open');
+    });
+});
 
 
     const swiper = new Swiper(".js-mv-swiper", {

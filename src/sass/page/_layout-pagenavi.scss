@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.layout-pagenavi {
+  margin-top: rem(68.8);
+
+  @include mq(md) {
+    margin-top: rem(70.4);
+  }
+}

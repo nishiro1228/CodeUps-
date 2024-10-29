@@ -3,7 +3,6 @@
 .pagenavi {}
 
 .pagenavi__inner {
-  margin-top: rem(68.8);
   max-width: rem(703);
   width:  100%;
   margin-inline: auto;
@@ -11,7 +10,6 @@
   padding-right: rem(15);
 
   @include mq(md){
-    margin-top: rem(70.4);
     padding-left: $padding-pc;
     padding-right: $padding-pc;
   }
@@ -59,7 +57,10 @@
 }
 
 .page-larger {
-  padding: rem(9) rem(14);
+  display: inline-block;
+  min-width: rem(38);
+  height: rem(38);
+  padding-top: rem(10);
   font-size: rem(16);
   font-family: $english2-font-family;
   font-weight: $bold;
