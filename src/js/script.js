@@ -149,7 +149,7 @@ $('.accordion__header').click(function() {
 
     $('.js-faq-question').on('click', function () {
         $(this).next().slideToggle();
-        $(this).toggleClass('is-open');
+        $(this).toggleClass('is-open__a');
     });
 });
 
