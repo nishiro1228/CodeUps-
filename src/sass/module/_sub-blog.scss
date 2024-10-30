@@ -87,7 +87,7 @@
 }
 
 .sub-blog__sidebar-title::before {
-  background-image: url(../images/common/クジラblack.webp);
+  background-image: url(../images/common/クジラblack.png);
     background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -205,10 +205,12 @@
 }
 
 .sub-blog__archive-header.is-open__a::before {
-  transform: translateY(-50%) rotate(332deg);
+  transform: translateY(-50%) rotate(327.5deg);
+  top: rem(3);
 }
 
 .sub-blog__archive-text {
+  display: block;
   position: relative;
   font-size: rem(24);
   font-weight: $regular;
@@ -227,7 +229,7 @@
   border-width: rem(10) 0 rem(10) rem(14);
   border-color: transparent transparent transparent $green;
   position: absolute;
-  top: 0;
+  top: rem(-6);
   left: rem(30);
   bottom: 0;
   margin: auto;

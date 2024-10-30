@@ -204,3 +204,9 @@
 .card__wrap.card__wrap--small {
   padding: rem(9.6) rem(16) rem(24) rem(16);
 }
+
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+}
