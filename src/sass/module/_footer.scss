@@ -35,10 +35,15 @@
   aspect-ratio: 120/45;
   object-fit: cover;
   height: auto;
+  transition: .3s;
 
   @include mq(md) {
     aspect-ratio: 200/75;
   }
+}
+
+.footer__logo img:hover {
+  opacity: .7;
 }
 
 .footer__sns {
@@ -64,10 +69,15 @@
   aspect-ratio: 24/24;
   object-fit: cover;
   height: auto;
+  transition: .3s;
 
   @include mq(md) {
     aspect-ratio: 32/32;
   }
+}
+
+.footer__sns-icon1 img:hover {
+  opacity: .7;
 }
 
 .footer__sns-icon2 {
@@ -83,10 +93,15 @@
   aspect-ratio: 24/24;
   object-fit: cover;
   height: auto;
+  transition: .3s;
 
   @include mq(md) {
     aspect-ratio: 32/32;
   }
+}
+
+.footer__sns-icon2 img:hover {
+  opacity: .7;
 }
 
 .footer__copyright {

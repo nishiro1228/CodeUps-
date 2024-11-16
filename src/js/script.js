@@ -97,15 +97,43 @@ function checkDrawerHeight() {
   });
 
 //   Informationタブ
-jQuery(function ($) {
-    $('.js-information-tab-menu').on('click', function () {
-        $('.js-information-tab-menu').removeClass('is-active__information-tab');
-        $('.js-information-tab-content').removeClass('is-active__information-tab');
-        $(this).addClass('is-active__information-tab');
-        var number = $(this).data("number");
-        $('#' + number).addClass('is-active__information-tab');
+$(document).ready(function () {
+    // タブのボタンとコンテンツを取得
+    const $tabButtons = $(".js-information-tab-menu");
+    const $tabContents = $(".js-information-tab-content");
+  
+    // タブをアクティブ化する関数
+    const activateTab = (tabName) => {
+      $tabButtons.removeClass("is-active__information-tab");
+      $tabContents.removeClass("is-active__information-tab");
+  
+      const $targetButton = $tabButtons.filter((_, btn) => $(`#${tabName}`).is($tabContents.eq($tabButtons.index(btn))));
+      const $targetContent = $(`#${tabName}`);
+  
+      if ($targetButton.length && $targetContent.length) {
+        $targetButton.addClass("is-active__information-tab");
+        $targetContent.addClass("is-active__information-tab");
+      }
+    };
+  
+    // ページ読み込み時にURLのクエリパラメータを確認してタブを表示
+    const tabParam = new URLSearchParams(window.location.search).get("tab");
+    if (tabParam) {
+      activateTab(tabParam);
+    }
+  
+    // タブクリック時の処理
+    $tabButtons.on("click", function () {
+      const tabIndex = $tabButtons.index(this);
+      $tabButtons.removeClass("is-active__information-tab");
+      $tabContents.removeClass("is-active__information-tab");
+  
+      $(this).addClass("is-active__information-tab");
+      $tabContents.eq(tabIndex).addClass("is-active__information-tab");
     });
-});
+  });
+
+
 
   // モーダル
   $(function () {

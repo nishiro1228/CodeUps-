@@ -13,6 +13,10 @@
   }
 }
 
+.page-top:hover {
+  cursor: pointer;
+}
+
 .page-top.visible {
   visibility: visible; /* 要素を表示 */
   opacity: 1; /* フェードイン */
@@ -25,8 +29,13 @@
   background-color: $white;
   filter: initial;
   border-radius: rem(999);
+  transition: .3s;
 
   @include mq(md) {
     aspect-ratio: 80/80;
   }
+}
+
+.page-top img:hover {
+  opacity: .7;
 }

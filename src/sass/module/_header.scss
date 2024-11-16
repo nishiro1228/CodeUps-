@@ -47,6 +47,14 @@ body {
   align-items: center;
 }
 
+.header__logo img {
+  transition: .3s;
+}
+
+.header__logo img:hover {
+  opacity: .7;
+}
+
 .header__nav {
   height: inherit;
 }
@@ -88,6 +96,29 @@ body {
 
 .header__nav-item {
   height: inherit;
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+}
+
+.header__nav-item:hover {
+  opacity: .7;
+}
+
+.header__nav-item::after {
+  position: absolute;
+  content: '';
+  bottom: rem(15);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: $white;
+  transition: all .3s ease 0s;
+}
+
+.header__nav-item:hover::after {
+  width:  100%;
 }
 
 .header__nav-item a {

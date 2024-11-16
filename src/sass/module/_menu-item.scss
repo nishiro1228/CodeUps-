@@ -8,6 +8,11 @@
   line-height: calc(18/16);
   color: $white;
   display: block;
+  transition: .3s;
+}
+
+.menu-item__title:hover {
+  opacity: .7;
 }
 
 a:first-of-type.menu-item__title {
