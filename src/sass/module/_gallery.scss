@@ -23,8 +23,14 @@
   }
 }
 
-.gallery__inner {
+.gallery__inner {}
 
+.gallery__inner.inner {
+  max-width: rem(600);
+
+  @include mq(md) {
+    max-width: $inner;
+  }
 }
 
 .gallery__section-title {

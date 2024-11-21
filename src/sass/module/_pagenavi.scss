@@ -72,6 +72,14 @@
   transition: .3s;
 }
 
+.page-larger.is-sp {
+  display: none;
+
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
 .page-larger + .page-larger {
   margin-left: rem(11);
 }

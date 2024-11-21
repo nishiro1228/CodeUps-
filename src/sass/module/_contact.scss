@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
-  display: none;
   height: rem(50);
   max-width: rem(109);
   width: 100%;
@@ -20,7 +19,6 @@
   z-index: 1;
 
   @include mq(md) {
-    display: block;
     height: rem(138);
     max-width: rem(301);
     top: rem(-39);
@@ -95,6 +93,7 @@
 
 .contact__information-text {
   text-align: center;
+  text-wrap: nowrap;
 
   @include mq(md) {
     text-align: left;

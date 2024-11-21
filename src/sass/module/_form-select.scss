@@ -25,10 +25,15 @@
   background-color: $green;
   clip-path: polygon(50% 12px, 0% 0%, 12px 0%);
   content: "";
-  right: calc(66.3% - min(44vw, 36rem));
-  top: rem(530);
+  right: calc(50% - min(44vw, 17.4rem));
+  top: rem(595.6);
   position: absolute;
   z-index: -1;
+
+  @include mq(md) {
+    right: calc(50% - min(44vw, 21.4rem));
+    top: rem(530);
+  }
 }
 
 .form-select select::-ms-expand {

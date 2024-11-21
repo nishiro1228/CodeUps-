@@ -24,26 +24,15 @@
   }
 }
 
-.sub-about::after {
-  display: none;
-  height: rem(138);
-  width: rem(301);
-  bottom: -42.3rem;
-  right: calc(50% - min(48vw, 40rem));
-  z-index: 1;
-  content: "";
-  position: absolute;
-  background-image: url('../images/common/contact2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.sub-about__inner {}
+
+.sub-about__inner.inner {
+  max-width: rem(600);
 
   @include mq(md) {
-    display: block;
+    max-width: $inner;
   }
 }
-
-.sub-about__inner {}
 
 .sub-about__container {
   margin-top: rem(27.2);

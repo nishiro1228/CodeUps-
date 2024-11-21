@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .sub-mv {
-  height: rem(548);
+  height: rem(460);
+
+  @include mq(md) {
+    height: rem(548);
+  }
 }
 
 .sub-mv__inner {
@@ -16,4 +20,5 @@
 
 .sub-mv__img img {
   height: inherit;
+  object-fit: cover;
 }
