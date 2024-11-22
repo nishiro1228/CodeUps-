@@ -82,8 +82,8 @@
   font-family: $base-font-family;
   font-weight: $regular;
   color: $black;
-  background: linear-gradient(90deg, $green 0%, $green 5%, $white 0%, $white 90%);
-  padding: rem(9.2) 0 rem(2.8) rem(82);
+  padding: rem(7) 0 rem(7) rem(82);
+  border-left: 8px solid $green;
 }
 
 .sub-blog__sidebar-title::before {
